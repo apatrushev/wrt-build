@@ -1,0 +1,18 @@
+PLATFORM=ar71xx
+PROFILE=tl-wdr4300-v1
+PACKAGES="
+igmpproxy \
+kmod-fs-f2fs mkf2fs f2fsck \
+kmod-usb-storage \
+luci \
+luci-app-openvpn openvpn-openssl \
+micropython-lib \
+socat \
+tcpdump \
+tinc \
+luci-app-samba samba36-server \
+ip \
+kmod-gre \
+usbip-client \
+"
+TARGET=/openwrt/bin/targets/ar71xx/generic/lede-17.01.2-ar71xx-generic-tl-wdr4300-v1-squashfs-sysupgrade.bin

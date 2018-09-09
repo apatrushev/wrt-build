@@ -1,0 +1,10 @@
+PLATFORM=ar71xx
+PROFILE=tl-mr3040-v1
+PACKAGES="kmod-usb-storage kmod-fs-exfat block-mount kmod-fs-f2fs mkf2fs f2fsck"
+# megafon
+# PACKAGES="ip -ip6tables -odhcp6c -ppp -ppp-mod-pppoe kmod-usb-serial kmod-usb-net-huawei-cdc-ncm"
+TARGET=/openwrt/bin/targets/ar71xx/generic/lede-17.01.2-ar71xx-generic-tl-mr3040-v1-squashfs-sysupgrade.bin
+
+#modem commands
+#echo -ne 'AT^NDISCONN=1,1\r\n' >/dev/cdc-wdm0
+#echo -ne 'AT^RESET\r\n' >/dev/cdc-wdm0

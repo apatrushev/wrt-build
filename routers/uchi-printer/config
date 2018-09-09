@@ -1,0 +1,25 @@
+PLATFORM=ar71xx
+PROFILE=tl-mr3020-v1
+PACKAGES="
+kmod-gre \
+ip \
+kmod-usb-ohci \
+usbip-server \
+-kmod-ppp \
+-kmod-pppoe \
+-kmod-pppox \
+-ppp \
+-ppp-mod-pppoe \
+-ip6tables \
+-kmod-ip6tables \
+-dnsmasq \
+-firewall \
+-kmod-ipt-conntrack \
+-kmod-ipt-core \
+-kmod-ipt-nat \
+-kmod-nf-conntrack \
+-kmod-nf-ipt \
+-kmod-nf-nat \
+-iptables \
+"
+TARGET=/openwrt/bin/targets/${PLATFORM}/generic/lede-17.01.2-${PLATFORM}-generic-${PROFILE}-squashfs-sysupgrade.bin
